@@ -1,51 +1,48 @@
 const Footer = () => {
-    return ( 
-        <div>
-             <section class="row bg-dark">
-                
-                 <div class="col-md-4 text-left text-warning">
-                  <h5 class="p-2 text-center">About Us</h5>
-                  <p>we are a prestigious jewellery company located at the core of Nairobi. we aim to give our esstemed customers the best service and quality products</p>
-                  <p>we ore located along express way road ,hamilton building</p>
-                  <p>our contact numbers are;
-                    +254756342537
-                    
-                    +254768904536
-                  </p>
-                  <br/>
-                 </div>
+  return ( 
+      <div>
+           <section class="row bg-primary">
+              
+               <div class="col-md-4 text-left text-dark">
+                <h5 class="p-2 text-center">About Us</h5>
+                <p>Nova Pharmaceuticals is a pharmacy that delivers all time services.</p>
+                <p>we are opened 24-7 hrs and do free deliveries</p>
+                <p>we are located in Westlands,Nairobi-kenya</p>
+                <br/>
+               </div>
 
-               
+             
 
-                 <div class="col-md-4  text-light">
-                  <h5 class="p-2 text-center text-warning">Contact Us</h5>
-                  <input class="form-control" type="email" placeholder="Enter your email"/>
-                  <br/>
-                  <textarea class="form-control" rows="7" placeholder="Leave a comment"></textarea>
+               <div class="col-md-4  text-dark">
+                <h5 class="p-2 text-center">Contact Us</h5>
+                <p></p>
+                <input class="form-control" type="email" placeholder="Enter your email"/>
+                <br/>
+                <textarea class="form-control" rows="7" placeholder="Leave a comment"></textarea>
 <br/>
-                  <input type="submit" value="Send Message" class="btn btn-outline-danger"/>
-                 </div>
+                <input type="submit" value="Send Message" class="btn btn-outline-info"/>
+               </div>
 
-                 <div class="col-md-4 ">
-                  <h4 class="text-center text-warning">Stay Connected</h4>
-                  <br/>
-                  <a href="https://public">
-                    <img src="images/social-media-icon-set-6994936_640.webp" alt=""/>
-                  </a>
-                  <a href="https://instagram.com">
-                    <img src="images/in.png" alt=""/>
-                  </a>
-                  
-                  <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt dolorum voluptates qui eos, vel sint, error quasi a quos officiis repellendus rerum nobis animi. Eum sapiente ullam in dolorem velit.</p>
-                </div>
-                  
+               <div class="col-md-4 ">
+                <h4 class="text-center text-dark">Stay Connected</h4>
+                <br/>
+                <p>on Facebook</p>
+                <p>twitter</p>
+                <p>and instagram</p>
+                <h4>our contact numbers are ;</h4>
+                <p>0789032415</p>
+                <p>or</p>
+                <p>0792613614</p>
+            
+              </div>
+                
 
-               </section>
-               <footer class="bg-dark text-warning text-center p-2">
-                <h5>Developed by PHOENIX 5O &copy; 2025.All rights reserved</h5>
-               </footer>
-        </div>
-     );
+             </section>
+             <footer class="bg-dark text-white text-center p-2">
+              <h5>Developed by Nancy Warui &copy; 2025.All rights reserved</h5>
+             </footer>
+      </div>
+   );
 }
- 
+
 export default Footer;

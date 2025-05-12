@@ -1,18 +1,21 @@
-import { useState } from "react";
 import axios from "axios";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const SignUp = () => {
-    //create usestate variables
+
+    //create variables
+
     let [username,setUsername] = useState("");
-    let [email,setEmail] = useState("");
-    let [phone,setPhone] = useState("");
-    let [password,setPassword] = useState("");
+    let[email,setEmail]= useState("");
+    let[phone,setPhone]= useState("");
+    let[password,setPassword]= useState("");
     let [loading, setLoading]= useState("");
     let[success,setSuccess] = useState("");
-    let [error,setError] = useState("");
+    let [error,setError] = useState("")
 
-    const submitForm = async (e) =>{
+    const submitForm = async (e) => {
         e.preventDefault()
        
         try {
@@ -32,22 +35,32 @@ const SignUp = () => {
         }
 
     }
-
-
     return ( 
         <div className="row justify-content-center mt-4">
+             
             <div className="col-md-6 card shadow p-4">
                 <h2>SignUp</h2>
+                <b className="text-warning">{loading}</b>
+                <b className="text-success">{success}</b>
+                <b className="text-danger">{error}</b>
+
                 <form onSubmit={submitForm}>
                 <input type="username" className="form-control" placeholder="Enter Username" required onChange={(e) => setUsername(e.target.value)} /> <br />
+           
                 <input type="email" className="form-control" placeholder="Enter Email"  required onChange={(e) => setEmail(e.target.value)}/><br />
+                    
                 <input type="tel" className="form-control" placeholder="Enter Phone No" required onChange={(e) => setPhone(e.target.value)} /><br />
+                  
                 <input type="password" className="form-control" placeholder="Enter Password" required onChange={(e) => setPassword(e.target.value)} /><br />
-                <button className="btn btn-success">SignUp</button>
+                  
+                <button className="btn btn-primary">SignUp</button>
+
                 </form>
                 <p>already have an account <Link to= "/signin">signin</Link></p>
             </div>
+            <Footer/>
         </div>
+            
      );
 }
  
